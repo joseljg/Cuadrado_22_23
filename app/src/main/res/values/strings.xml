@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Cuadrado_22_23</string>
+    <string name="texto_titulo">Cuadrado</string>
+    <string name="texto_ayuda_cuadro_texto">Escribe un entero</string>
+    <string name="texto_boton">Calcular cuadrado</string>
+    <string name="cero">0</string>
+</resources>

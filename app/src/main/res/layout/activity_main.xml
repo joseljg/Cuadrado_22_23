@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txt_titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/texto_titulo"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edt_numero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:autofillHints="0"
+        android:ems="10"
+        android:hint="@string/texto_ayuda_cuadro_texto"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:textColorHint="@color/color_caja"
+        android:textSize="@dimen/tam_cuadrado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_titulo" />
+
+    <Button
+        android:id="@+id/bt_cuadrado"
+        android:layout_width="161dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="20dp"
+        android:onClick="calcular_el_cuadrado"
+        android:text="@string/texto_boton"
+        app:layout_constraintEnd_toEndOf="@+id/edt_numero"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/edt_numero"
+        app:layout_constraintTop_toBottomOf="@+id/edt_numero" />
+
+    <TextView
+        android:id="@+id/txt_resultado"
+        android:layout_width="288dp"
+        android:layout_height="284dp"
+        android:layout_marginStart="166dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="166dp"
+        android:background="#FFEB3B"
+        android:gravity="center"
+        android:onClick="calcular_el_cuadrado"
+        android:text="@string/cero"
+        android:textSize="@dimen/tam_texto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_cuadrado" />
+</androidx.constraintlayout.widget.ConstraintLayout>
